@@ -1,0 +1,14 @@
+<ActionBar title="List" icon="" class="action-bar">
+</ActionBar>
+<ScrollView>
+    <ListView [items]="jokes" class="list-group">
+        <template let-item="item" let-odd="odd" let-even="even">
+            <GridLayout rows="* auto" columns="*" class="list-group-item active" style="border:1;"> 
+                <StackLayout row="0" col="0" backgroundColor="white" (tap)="share(item.text)"  class="list-group-item">
+                    <Label class="list-group-item-heading" [text]="item.id"></Label>
+                    <Label class="list-group-item-text" [text]="item.text" textWrap="true"></Label>      
+                </StackLayout>
+            </GridLayout>
+        </template>
+    </ListView>
+</ScrollView>

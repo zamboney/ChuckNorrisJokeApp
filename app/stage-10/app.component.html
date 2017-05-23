@@ -1,0 +1,15 @@
+<ActionBar title="Profile">
+    <ActionItem (tap)="toggleDrawer()">
+        <Label text="" class="fa p-r-15"></Label>
+    </ActionItem>
+</ActionBar>
+<RadSideDrawer>
+    <StackLayout tkDrawerContent class="sidedrawer-left">
+        <GridLayout class="sidedrawer-list-item">
+            <Button class="sidedrawer-list-item-text borderless-btn" [nsRouterLink]="['/list']" text="List"></Button>
+        </GridLayout>
+    </StackLayout>
+    <StackLayout tkMainContent>
+        <page-router-outlet></page-router-outlet>
+    </StackLayout>
+</RadSideDrawer>

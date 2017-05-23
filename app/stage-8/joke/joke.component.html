@@ -1,0 +1,13 @@
+<ActionBar title="Joke" icon="" class="action-bar">
+    <ActionItem (tap)="onRefresh()"
+      ios.systemIcon="13" ios.position="right"
+      android.systemIcon="ic_menu_refresh" android.position="actionBar">
+    </ActionItem>
+</ActionBar>
+<FlexboxLayout class="m-l-15 m-r-15 text-center" alignItems="center" alignContent="space-between" justifyCntent="center">
+        <Label class="label"  [text]="joke" textWrap="true"></Label>    
+</FlexboxLayout>
+
+
+
+

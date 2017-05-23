@@ -1,0 +1,1 @@
+using [nativescript-telerik-ui](https://www.npmjs.com/package/nativescript-telerik-ui)
